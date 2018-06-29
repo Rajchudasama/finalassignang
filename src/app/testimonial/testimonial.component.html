@@ -1,0 +1,14 @@
+<input [(ngModel)] = "testimonialsearch.name">
+<button (click) ="findTestimonial(testimonialsearch)">Find Testimonial by name</button>
+<div *ngFor = "let t of testimonial">
+<ul>
+  <li>Id : {{t.Id}} </li>
+  <li>Title : {{t.title}}</li>
+  <li>Content : {{t.content}}</li>
+  <li>Name : {{t.name}}</li>
+  <li>Company : {{t.company}}</li>
+  <li>Designation : {{t.designation}}</li>
+  <li>Create Date : {{t.createdate}}</li>
+  <li>Is Active : {{t.isActive}}</li>
+</ul>
+</div>
