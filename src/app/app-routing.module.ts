@@ -5,9 +5,11 @@ import {FaqComponent} from './faq/faq.component';
 import {TestimonialComponent } from './testimonial/testimonial.component';
 
 const routes: Routes = [
+
   {path: '', component: FaqComponent},
   {path: 'faq', component: FaqComponent},
   {path: 'testimonial', component:TestimonialComponent}
+
 
 ];
 @NgModule({
