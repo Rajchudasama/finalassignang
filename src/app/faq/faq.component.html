@@ -1,6 +1,6 @@
-
+<h1>Search for faq</h1>
 <div></div>
-<input [(ngModel)]="searchfaq.id">
+<span>Enter id :  </span><input [(ngModel)]="searchfaq.id">
 <button (click)="faqbyid(searchfaq)">Search Faq</button>
 <div *ngIf="faqs">
   <div *ngFor="let f of faqs">
