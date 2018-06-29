@@ -1,0 +1,14 @@
+<input [(ngModel)]="searchfaq.id">
+<button (click)="faqbyid(searchfaq)">Search Faq</button>
+<div *ngIf="faqs">
+  <div *ngFor="let f of faqs">
+    <ul>
+      <li>ID : {{f.id}}</li>
+      <li>Question : {{f.question}}</li>
+      <li>Answer : {{f.answer}}</li>
+      <li>CreateDate : {{f.createdate}}</li>
+      <li>Display : {{f.display}}</li>
+    </ul>
+  </div>
+</div>
+
