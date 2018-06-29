@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Color Palette</title>
+    <title>Raminder</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -19,8 +19,8 @@
 <input [(ngModel)] = "testimonialsearch.name">
 <button (click) ="findTestimonial(testimonialsearch)">Find Testimonial by name</button>
   </div>
-<div *ngFor = "let t of testimonial">
-<ul>
+<div *ngFor = "let t of testimonial"class="container" align="center">
+<ul align="center" class="list-unstyled">
   <li>Id : {{t.Id}} </li>
   <li>Title : {{t.title}}</li>
   <li>Content : {{t.content}}</li>
